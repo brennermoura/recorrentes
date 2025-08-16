@@ -570,7 +570,7 @@ export default function LandingPage() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4">
+            <AccordionItem value="item-5">
               <AccordionTrigger className="text-left">
                 Diferença entre o suporte básico, extra e prioritário?
               </AccordionTrigger>
@@ -583,7 +583,7 @@ export default function LandingPage() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5">
+            <AccordionItem value="item-6">
               <AccordionTrigger className="text-left">
                 Preciso comprar o domínio separadamente?
               </AccordionTrigger>
