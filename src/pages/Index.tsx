@@ -157,7 +157,9 @@ export default function LandingPage() {
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Seu Site Profissional
-              <span className="block text-blue-600">a partir de R$19/mês</span>
+              <span className="block text-blue-600">
+                a partir de R$10,90/mês
+              </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Criamos seu site profissional com hospedagem gratuita, email
@@ -272,7 +274,7 @@ export default function LandingPage() {
                 <CardTitle className="text-2xl">Básico</CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold text-gray-900">
-                    R$9,49
+                    R$10,90
                   </span>
                   <span className="text-gray-600">/mês</span>
                 </div>
@@ -318,7 +320,7 @@ export default function LandingPage() {
                 <CardTitle className="text-2xl">Profissional</CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold text-gray-900">
-                    R$19,49
+                    R$19,90
                   </span>
                   <span className="text-gray-600">/mês</span>
                 </div>
@@ -359,7 +361,7 @@ export default function LandingPage() {
                 <CardTitle className="text-2xl">Empresarial</CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold text-gray-900">
-                    R$49,49
+                    R$49,90
                   </span>
                   <span className="text-gray-600">/mês</span>
                 </div>
