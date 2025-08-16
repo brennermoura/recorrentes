@@ -362,7 +362,9 @@ export default function LandingPage() {
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Empresarial</CardTitle>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold text-gray-900">R$79</span>
+                  <span className="text-4xl font-bold text-gray-900">
+                    R$49,49
+                  </span>
                   <span className="text-gray-600">/mês</span>
                 </div>
                 <CardDescription className="mt-2">
