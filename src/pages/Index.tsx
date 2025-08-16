@@ -524,21 +524,25 @@ export default function LandingPage() {
               </AccordionTrigger>
               <AccordionContent>
                 Após a contratação, nossa equipe entrará em contato em até 24h
-                para entender suas necessidades. Criamos o site em até 7 dias
-                úteis e você pode solicitar ajustes durante o processo. Após
-                aprovação, seu site fica online imediatamente.
+                para entender suas necessidades. Você poderá escolher um dos
+                modelos de template disponíveis, que será personalizado com as
+                informações e identidade do seu negócio. O site é criado em até
+                7 dias úteis, com possibilidade de solicitar ajustes durante o
+                processo. Após a aprovação, seu site fica online imediatamente.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-left">
-                O que está incluído no plano básico de R$19/mês?
+                O que eu recebo ao contratar um dos planos?
               </AccordionTrigger>
               <AccordionContent>
-                O plano básico inclui: 1 site profissional responsivo,
-                hospedagem gratuita, 1 conta de email profissional, SSL
-                gratuito, suporte básico e todas as atualizações de segurança. O
-                domínio é pago separadamente pelo cliente.
+                Todos os planos incluem: 1 site moderno, que funciona em
+                qualquer celular ou computador, seguro com cadeado SSL,
+                hospedagem gratuita, e-mail profissional, além de suporte para
+                esclarecimento de dúvidas, ajuda com os serviços e todas as
+                atualizações de segurança. O domínio é pago separadamente pelo
+                cliente.
               </AccordionContent>
             </AccordionItem>
 
@@ -549,8 +553,8 @@ export default function LandingPage() {
               <AccordionContent>
                 Nossos contratos têm duração mínima de 1 ano. Após este período,
                 você pode cancelar a qualquer momento com 30 dias de
-                antecedência. Durante o período de contrato, oferecemos garantia
-                de satisfação.
+                antecedência. Durante o período de contrato, oferecemos 99,9% de
+                uptime (seu site no ar).
               </AccordionContent>
             </AccordionItem>
 
@@ -559,11 +563,23 @@ export default function LandingPage() {
                 Como funciona o email profissional?
               </AccordionTrigger>
               <AccordionContent>
-                Configuramos seu email profissional (ex:
-                seu-nome@seudominio.com.br) que pode ser acessado via webmail,
-                Outlook, Gmail ou qualquer cliente de email. Inclui 1GB de
-                armazenamento no plano básico, com opções de upgrade
-                disponíveis.
+                Configuramos seu e-mail profissional (ex:
+                seu-nome@seudominio.com.br), que você pode acessar pelo webmail
+                da Zoho ou configurar em programas como Outlook, Gmail ou no
+                celular. Os planos inclui de 1 a 5 emails com 5GB de espaço.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-left">
+                Diferença entre o suporte básico, extra e prioritário?
+              </AccordionTrigger>
+              <AccordionContent>
+                O suporte básico inclui ajuda para dúvidas gerais e orientações
+                sobre o site. O suporte extra oferece respostas mais rápidas e
+                ajuda com pequenas alterações. O suporte prioritário garante
+                atendimento imediato para problemas críticos e alterações
+                urgentes, com prioridade máxima na fila de atendimento.
               </AccordionContent>
             </AccordionItem>
 
