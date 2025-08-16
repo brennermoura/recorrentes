@@ -287,7 +287,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Hospedagem gratuita</span>
+                  <span>Hospedagem com SSL</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -300,10 +300,6 @@ export default function LandingPage() {
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
                   <span>Suporte técnico</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>SSL gratuito</span>
                 </div>
                 <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
                   Escolher Plano
@@ -333,11 +329,11 @@ export default function LandingPage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>3 sites profissionais</span>
+                  <span>3 templates para escolher</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>3 templates pra escolher</span>
+                  <span>Hospedagem com SSL</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -374,11 +370,11 @@ export default function LandingPage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Até 5 templates pra escolher</span>
+                  <span>Até 5 templates para escolher</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Hospedagem grátis</span>
+                  <span>Hospedagem com SSL</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
