@@ -12,7 +12,9 @@ import {
   Globe,
   Mail,
   HeadphonesIcon,
-  DollarSign,
+  Rocket,
+  Lock,
+  Code,
   Star,
   Menu,
   X,
@@ -51,7 +53,7 @@ export default function LandingPage() {
                 <Globe className="w-5 h-5 text-white" />
               </div>
               <span className="ml-2 text-xl font-bold text-gray-900">
-                WebCraft Pro
+                HospedaShop
               </span>
             </div>
 
@@ -182,26 +184,26 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Por que escolher a WebCraft Pro?
+              Por que escolher a HospedaShop?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Oferecemos tudo que você precisa para ter um site profissional
-              online
+              Não importa qual plano você escolha, sua presença online já começa
+              com qualidade profissional garantida.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="text-center group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader>
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 transition-colors">
-                  <DollarSign className="w-8 h-8 text-blue-600 group-hover:text-white" />
+                  <Rocket className="w-8 h-8 text-blue-600 group-hover:text-white" />
                 </div>
-                <CardTitle className="text-xl">Preço Acessível</CardTitle>
+                <CardTitle className="text-xl">Alta Performance</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  Sites profissionais a partir de apenas R$19/mês. Sem custos
-                  ocultos ou surpresas.
+                  Sites otimizados para abrir rápido em qualquer dispositivo,
+                  seja celular, tablet ou computador.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -211,12 +213,42 @@ export default function LandingPage() {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
                   <Globe className="w-8 h-8 text-green-600 group-hover:text-white" />
                 </div>
-                <CardTitle className="text-xl">Hospedagem Gratuita</CardTitle>
+                <CardTitle className="text-xl">Hospedagem Cloud</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  Hospedagem moderna e escalável inclusa. Seu site sempre online
-                  e rápido.
+                  Rápida, escalável e segura. A mesma tecnologia usada por
+                  grandes empresas para manter sites sempre online.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader>
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
+                  <Lock className="w-8 h-8 text-green-600 group-hover:text-white" />
+                </div>
+                <CardTitle className="text-xl">Segurança SSL Inclusa</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600">
+                  Seu site protegido com certificado digital, garantindo
+                  navegação segura e credibilidade com seus clientes.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader>
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-600 transition-colors">
+                  <Code className="w-8 h-8 text-green-600 group-hover:text-white" />
+                </div>
+                <CardTitle className="text-xl">Tecnologia Moderna</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-gray-600">
+                  Utilizamos as mesmas soluções que grandes players digitais
+                  usam — entregamos inovação no seu site desde o primeiro dia.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -226,12 +258,15 @@ export default function LandingPage() {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-600 transition-colors">
                   <Mail className="w-8 h-8 text-purple-600 group-hover:text-white" />
                 </div>
-                <CardTitle className="text-xl">Email Profissional</CardTitle>
+                <CardTitle className="text-xl">
+                  E-mail Corporativo Confiável
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  1 conta de email profissional gratuita inclusa para dar
-                  credibilidade ao seu negócio.
+                  Crie sua marca com endereço profissional (ex:
+                  contato@suaempresa.com.br). Compatível com Gmail, Outlook e
+                  qualquer cliente de e-mail.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -241,16 +276,36 @@ export default function LandingPage() {
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-600 transition-colors">
                   <HeadphonesIcon className="w-8 h-8 text-orange-600 group-hover:text-white" />
                 </div>
-                <CardTitle className="text-xl">Suporte Dedicado</CardTitle>
+                <CardTitle className="text-xl">
+                  Suporte Humano Dedicado
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  Entrega rápida e suporte dedicado sempre que você precisar.
-                  Estamos aqui para ajudar.
+                  Nada de robôs: sempre que precisar, você fala com gente de
+                  verdade para resolver sua demanda.
                 </CardDescription>
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section id="cta" className="py-20 bg-sky-100 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            “Tudo isso já incluso em qualquer plano, sem taxas extras ou
+            pegadinhas.”
+          </h2>
+
+          <Button
+            size="lg"
+            onClick={() => scrollToSection("pricing")}
+            className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 rounded-full transform hover:scale-105 transition-all duration-200 shadow-lg"
+          >
+            Quero Meu Site Agora
+          </Button>
         </div>
       </section>
 
@@ -607,8 +662,8 @@ export default function LandingPage() {
             Pronto para ter seu site profissional?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Junte-se a mais de 1.000 empresas que já transformaram sua presença
-            online conosco. Comece hoje mesmo e veja a diferença!
+            Junte-se a outras empresas que já transformaram sua presença online
+            conosco. Comece hoje mesmo e veja a diferença!
           </p>
           <Button
             size="lg"
