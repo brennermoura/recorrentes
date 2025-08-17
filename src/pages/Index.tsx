@@ -145,8 +145,15 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
+      <section
+        className="min-h-screen  pt-24 pb-20 px-4 sm:px-6 lg:px-8 relative bg-cover bg-center flex items-center justify-center"
+        style={{
+          backgroundImage: "url('/top.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/50 via-purple-800/30 via-pink-600/30 to-indigo-900/50"></div>{" "}
+        {/* Overlay with transparency */}
+        <div className="relative max-w-7xl mx-auto text-center">
           <div
             className={`transition-all duration-1000 ${
               isVisible
@@ -154,19 +161,19 @@ export default function LandingPage() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <Badge className="mb-6 bg-blue-100 text-blue-800 hover:bg-blue-100">
-              ✨ Websites profissionais com preço justo
+            <Badge className="my-8 bg-blue-500/70 text-sky-200 hover:bg-blue-400/70">
+              <Rocket className="mr-2 w-4 text-blue-400" /> Websites
+              profissionais, com qualidade premium e preços acessíveis
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-7xl font-bold text-white mb-10">
               Seu Site Profissional
-              <span className="block text-blue-600">
-                a partir de R$10,90/mês
+              <span className="block text-sky-200 mt-2 font-extrabold">
+                a partir de R$19,90/mês
               </span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Criamos seu site profissional com hospedagem gratuita, email
-              profissional incluso e suporte dedicado. Tudo que você precisa
-              para ter presença online de qualidade.
+            <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto md:text-2xl">
+              Seu site profissional, na nuvem, com e-mail corporativo e suporte
+              dedicado. Simples, rápido e confiável
             </p>
             <Button
               size="lg"
@@ -187,8 +194,8 @@ export default function LandingPage() {
               Por que escolher a HospedaShop?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Não importa qual plano você escolha, sua presença online já começa
-              com qualidade profissional garantida.
+              Nossos planos garantem a qualidade e a segurança de ponta que sua
+              empresa precisa para uma presença digital profissional.
             </p>
           </div>
 
@@ -292,9 +299,9 @@ export default function LandingPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section id="cta" className="py-20 bg-sky-100 px-4 sm:px-6 lg:px-8">
+      <section id="cta" className="py-20 bg-indigo-900/10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-indigo-900 mb-6">
             “Tudo isso já incluso em qualquer plano, sem taxas extras ou
             pegadinhas.”
           </h2>
@@ -329,7 +336,7 @@ export default function LandingPage() {
                 <CardTitle className="text-2xl">Básico</CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold text-gray-900">
-                    R$10,90
+                    R$19,90
                   </span>
                   <span className="text-gray-600">/mês</span>
                 </div>
@@ -375,7 +382,7 @@ export default function LandingPage() {
                 <CardTitle className="text-2xl">Profissional</CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold text-gray-900">
-                    R$19,90
+                    R$29,90
                   </span>
                   <span className="text-gray-600">/mês</span>
                 </div>
@@ -416,7 +423,7 @@ export default function LandingPage() {
                 <CardTitle className="text-2xl">Empresarial</CardTitle>
                 <div className="mt-4">
                   <span className="text-4xl font-bold text-gray-900">
-                    R$49,90
+                    R$59,90
                   </span>
                   <span className="text-gray-600">/mês</span>
                 </div>
@@ -469,8 +476,8 @@ export default function LandingPage() {
               O que nossos clientes dizem
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Mais de 1.000 empresas confiam na WebCraft Pro para sua presença
-              online
+              Essas empresas confiam na HospedaShop para construir uma presença
+              digital profissional.
             </p>
           </div>
 
@@ -486,18 +493,20 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "A WebCraft Pro transformou completamente nossa presença
-                  online. O site ficou incrível e o suporte é excepcional!"
+                  "A HospedaShop é muito boa no que faz. Tá top. Gostei demais,
+                  estou super satisfeito."
                 </p>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-semibold">
-                    MC
-                  </div>
+                  <div className="w-10 h-10 bg-blue-600 rounded-full overflow-hidden">
+                    <img
+                      src="https://media.licdn.com/dms/image/v2/D4D03AQHWRxfumYXywg/profile-displayphoto-shrink_800_800/B4DZX.dyGfHwAc-/0/1743730975959?e=1758153600&v=beta&t=2-jLn12VQjzaCVy5T5m8h9KEatlB5V_4Xsw24s_Ib78" // Substitua pelo caminho da imagem do avatar
+                      alt="Avatar"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>{" "}
                   <div className="ml-3">
-                    <p className="font-semibold">Maria Clara</p>
-                    <p className="text-sm text-gray-500">
-                      CEO, Boutique Elegance
-                    </p>
+                    <p className="font-semibold">Rafael Carloto</p>
+                    <p className="text-sm text-gray-500">CEO, SmartXEnglish</p>
                   </div>
                 </div>
               </CardContent>
@@ -518,9 +527,13 @@ export default function LandingPage() {
                   site profissional que atrai muitos clientes."
                 </p>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-semibold">
-                    RS
-                  </div>
+                  <div className="w-10 h-10 bg-blue-600 rounded-full overflow-hidden">
+                    <img
+                      src="https://img.freepik.com/fotos-gratis/sorrindo-garcom-segurando-rolo-vegetal-no-cafa_1170-610.jpg?semt=ais_hybrid&w=740&q=80" // Substitua pelo caminho da imagem do avatar
+                      alt="Avatar"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>{" "}
                   <div className="ml-3">
                     <p className="font-semibold">Roberto Silva</p>
                     <p className="text-sm text-gray-500">
@@ -546,9 +559,13 @@ export default function LandingPage() {
                   site no ar com email profissional funcionando."
                 </p>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-semibold">
-                    AF
-                  </div>
+                  <div className="w-10 h-10 bg-blue-600 rounded-full overflow-hidden">
+                    <img
+                      src="https://all-images.ai/wp-content/uploads/2024/02/ai-face-generator.png" // Substitua pelo caminho da imagem do avatar
+                      alt="Avatar"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>{" "}
                   <div className="ml-3">
                     <p className="font-semibold">Ana Ferreira</p>
                     <p className="text-sm text-gray-500">
@@ -656,7 +673,7 @@ export default function LandingPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section id="cta" className="py-20 bg-blue-600 px-4 sm:px-6 lg:px-8">
+      <section id="cta" className="py-20 bg-indigo-900 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Pronto para ter seu site profissional?
@@ -685,15 +702,16 @@ export default function LandingPage() {
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                   <Globe className="w-5 h-5 text-white" />
                 </div>
-                <span className="ml-2 text-xl font-bold">WebCraft Pro</span>
+                <span className="ml-2 text-xl font-bold">HospedaShop</span>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
-                Criamos sites profissionais com hospedagem gratuita, email
-                profissional e suporte dedicado. Sua presença online de
-                qualidade começa aqui.
+                A Hospedashop cria sites profissionais completos, com hospedagem
+                em nuvem, e-mail personalizado e suporte dedicado. Sua presença
+                online de alto nível começa aqui, com tudo que sua empresa
+                precisa.
               </p>
               <div className="text-gray-400">
-                <p>📧 contato@webcraftpro.com.br</p>
+                <p>📧 atendimento@hospeda.shop</p>
                 <p>📱 (11) 99999-9999</p>
               </div>
             </div>
@@ -742,15 +760,15 @@ export default function LandingPage() {
               <h3 className="font-semibold mb-4">Serviços</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Criação de Sites</li>
-                <li>Hospedagem Web</li>
-                <li>Email Profissional</li>
-                <li>Suporte Técnico</li>
+                <li>Hospedagem em Nuvem</li>
+                <li>Email Corporativo</li>
+                <li>Suporte Técnico Humano</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 WebCraft Pro. Todos os direitos reservados.</p>
+            <p>&copy; 2025 HospedaShop. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
