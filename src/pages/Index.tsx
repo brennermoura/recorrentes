@@ -52,7 +52,7 @@ export default function LandingPage() {
               <img
                 src="/HospedaShopLogo.svg"
                 alt="Logo HospedaShop"
-                className=" w-full max-h-10"
+                className=" max-h-9"
               />
             </div>
             {/* Desktop Navigation */}
@@ -335,8 +335,8 @@ export default function LandingPage() {
               Planos que cabem no seu bolso
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Escolha o plano ideal para o seu negócio. Todos incluem hospedagem
-              e email gratuitos.
+              Escolha o plano ideal para o se+u negócio. Todos os planos vêm com
+              hospedagem e e-mail corporativo.
             </p>
           </div>
 
@@ -358,7 +358,7 @@ export default function LandingPage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>2 templates pra escolher</span>
+                  <span>Design básico</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -376,7 +376,25 @@ export default function LandingPage() {
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
                   <span>Suporte técnico</span>
                 </div>
-                <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
+                <Button
+                  className="w-full mt-6 bg-blue-600 hover:bg-blue-700"
+                  onClick={() => {
+                    const plano = "Básico";
+                    const preco = "R$19,90";
+                    const mensagem = `Oi! Vi seu site e me interessei no plano "${plano}" por ${preco}/mês. Você pode me passar mais detalhes sobre ele?`;
+
+                    // Número do WhatsApp no formato internacional (exemplo: 55 para Brasil)
+                    const numero = "5521987968794";
+
+                    // Monta a URL
+                    const url = `https://wa.me/${numero}?text=${encodeURIComponent(
+                      mensagem
+                    )}`;
+
+                    // Redireciona para o WhatsApp
+                    window.open(url, "_blank");
+                  }}
+                >
                   Escolher Plano
                 </Button>
               </CardContent>
@@ -404,7 +422,7 @@ export default function LandingPage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>3 templates para escolher</span>
+                  <span>3 opções de design</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -420,9 +438,32 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                  <span>Alterações de design sob demanda</span>
+                </div>
+
+                <div className="flex items-center">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
                   <span>Suporte extra</span>
                 </div>
-                <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
+                <Button
+                  className="w-full mt-6 bg-blue-600 hover:bg-blue-700"
+                  onClick={() => {
+                    const plano = "Profissional";
+                    const preco = "R$29,90";
+                    const mensagem = `Oi! Vi seu site e me interessei no plano "${plano}" por ${preco}/mês. Você pode me passar mais detalhes sobre ele?`;
+
+                    // Número do WhatsApp no formato internacional (exemplo: 55 para Brasil)
+                    const numero = "5521987968794";
+
+                    // Monta a URL
+                    const url = `https://wa.me/${numero}?text=${encodeURIComponent(
+                      mensagem
+                    )}`;
+
+                    // Redireciona para o WhatsApp
+                    window.open(url, "_blank");
+                  }}
+                >
                   Escolher Plano
                 </Button>
               </CardContent>
@@ -445,7 +486,7 @@ export default function LandingPage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Até 5 templates para escolher</span>
+                  <span>Design exclusivo</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -461,13 +502,27 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>Alterações de design sob demanda</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
                   <span>Suporte prioritário</span>
                 </div>
-                <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
+                <Button
+                  className="w-full mt-6 bg-blue-600 hover:bg-blue-700"
+                  onClick={() => {
+                    const plano = "Empresarial";
+                    const preco = "R$59,90";
+                    const mensagem = `Oi! Vi seu site e me interessei no plano "${plano}" por ${preco}/mês. Você pode me passar mais detalhes sobre ele?`;
+
+                    // Número do WhatsApp no formato internacional (exemplo: 55 para Brasil)
+                    const numero = "5521987968794";
+
+                    // Monta a URL
+                    const url = `https://wa.me/${numero}?text=${encodeURIComponent(
+                      mensagem
+                    )}`;
+
+                    // Redireciona para o WhatsApp
+                    window.open(url, "_blank");
+                  }}
+                >
                   Escolher Plano
                 </Button>
               </CardContent>
