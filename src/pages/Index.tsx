@@ -171,8 +171,9 @@ export default function LandingPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto md:text-2xl">
-              Seu site profissional, na nuvem, com e-mail corporativo e suporte
-              dedicado. Simples, rápido e confiável
+              A solução completa na nuvem com e-mail corporativo e suporte
+              dedicado, para que você foque no que realmente importa: seu
+              negócio.
             </p>
             <Button
               size="lg"
