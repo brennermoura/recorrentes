@@ -49,10 +49,17 @@ export default function LandingPage() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0">
+              {/* Logo para telas maiores */}
               <img
                 src="/HospedaShopLogo.svg"
                 alt="Logo HospedaShop"
-                className="h-8 md:h-10 w-auto"
+                className="hidden md:block h-8 md:h-10 w-auto"
+              />
+              {/* Favicon para telas menores */}
+              <img
+                src="/favicon.png"
+                alt="Favicon HospedaShop"
+                className="block md:hidden h-8 w-8"
               />
             </div>
             {/* Desktop Navigation */}
