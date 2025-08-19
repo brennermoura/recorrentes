@@ -52,7 +52,7 @@ export default function LandingPage() {
               <img
                 src="/HospedaShopLogo.svg"
                 alt="Logo HospedaShop"
-                className=" max-h-9"
+                className="h-auto max-h-9 w-auto"
               />
             </div>
             {/* Desktop Navigation */}
