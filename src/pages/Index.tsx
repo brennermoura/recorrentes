@@ -342,7 +342,7 @@ export default function LandingPage() {
               Planos que cabem no seu bolso
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Escolha o plano ideal para o se+u negócio. Todos os planos vêm com
+              Escolha o plano ideal para o seu negócio. Todos os planos vêm com
               hospedagem e e-mail corporativo.
             </p>
           </div>
