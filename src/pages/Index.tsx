@@ -49,14 +49,12 @@ export default function LandingPage() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <Globe className="w-5 h-5 text-white" />
-              </div>
-              <span className="ml-2 text-xl font-bold text-gray-900">
-                HospedaShop
-              </span>
+              <img
+                src="/HospedaShopLogo.svg"
+                alt="Logo HospedaShop"
+                className=" w-full max-h-10"
+              />
             </div>
-
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               <button
@@ -145,13 +143,14 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section
-        className="min-h-screen  pt-24 pb-20 px-4 sm:px-6 lg:px-8 relative bg-cover bg-center flex items-center justify-center"
-        style={{
-          backgroundImage: "url('/top.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/50 via-purple-800/30 via-pink-600/30 to-indigo-900/50"></div>{" "}
+      <section className="min-h-screen  pt-24 pb-20 px-4 sm:px-6 lg:px-8 relative bg-cover bg-center flex items-center justify-center">
+        <div
+          className="absolute inset-0 transform scale-y-[-1] bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/top2.jpg')",
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 via-purple-800/70 via-pink-600/70 to-indigo-900/90"></div>{" "}
         {/* Overlay with transparency */}
         <div className="relative max-w-7xl mx-auto text-center">
           <div
@@ -163,7 +162,7 @@ export default function LandingPage() {
           >
             <Badge className="my-8 bg-blue-500/70 text-sky-200 hover:bg-blue-400/70">
               <Rocket className="mr-2 w-4 text-blue-400" /> Websites
-              profissionais, com qualidade premium e preços acessíveis
+              profissionais, com email corporativo!
             </Badge>
             <h1 className="text-4xl md:text-7xl font-bold text-white mb-10">
               Seu Site Profissional
@@ -209,8 +208,10 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  Sites otimizados para abrir rápido em qualquer dispositivo,
-                  seja celular, tablet ou computador.
+                  Garanta uma experiência impecável para seus visitantes. Nossos
+                  sites são otimizados para carregar rapidamente em qualquer
+                  dispositivo — seja no celular, tablet ou computador —
+                  proporcionando agilidade e profissionalismo.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -224,8 +225,10 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  Rápida, escalável e segura. A mesma tecnologia usada por
-                  grandes empresas para manter sites sempre online.
+                  Conte com a potência da nuvem. Nossa hospedagem é rápida,
+                  escalável e segura, usando a mesma tecnologia de ponta das
+                  maiores empresas para garantir que seu site esteja sempre
+                  online e pronto para atender seus clientes.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -239,8 +242,10 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  Seu site protegido com certificado digital, garantindo
-                  navegação segura e credibilidade com seus clientes.
+                  Proteja sua marca e os dados de seus clientes desde o início.
+                  O certificado SSL garante que a comunicação com seu site seja
+                  totalmente criptografada, construindo a confiança necessária
+                  para que seus visitantes se sintam seguros ao navegar.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -254,8 +259,10 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  Utilizamos as mesmas soluções que grandes players digitais
-                  usam — entregamos inovação no seu site desde o primeiro dia.
+                  Desfrute de inovação desde o primeiro clique. Utilizamos as
+                  mesmas soluções de tecnologia que grandes players do mercado
+                  para entregar um site moderno, seguro e sempre atualizado,
+                  pronto para os desafios do mundo digital.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -271,9 +278,10 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  Crie sua marca com endereço profissional (ex:
-                  contato@suaempresa.com.br). Compatível com Gmail, Outlook e
-                  qualquer cliente de e-mail.
+                  Construa uma imagem profissional com um e-mail personalizado.
+                  Crie endereços com o nome da sua empresa (ex:
+                  contato@suaempresa.com.br), painel e aplicativo próprios para
+                  gerenciar sua conta e fortalecer a credibilidade da sua marca.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -289,8 +297,10 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600">
-                  Nada de robôs: sempre que precisar, você fala com gente de
-                  verdade para resolver sua demanda.
+                  Conte com um suporte que realmente se importa. Nada de robôs
+                  ou respostas automáticas: nossa equipe de especialistas está
+                  pronta para te ouvir, entender sua demanda e resolver qualquer
+                  questão com atenção e dedicação.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -298,7 +308,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
+      {/* Middle CTA Section */}
       <section id="cta" className="py-20 bg-indigo-900/10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-indigo-900 mb-6">
@@ -462,6 +472,14 @@ export default function LandingPage() {
               </CardContent>
             </Card>
           </div>
+          {/* Nota sobre taxa de setup */}
+          <p className="text-sm text-gray-500 text-center mt-8 max-w-2xl mx-auto">
+            * Todos os planos possuem uma taxa única de configuração de{" "}
+            <span className="font-semibold text-gray-700">R$200</span>. Essa
+            taxa cobre a criação inicial do site, configuração da hospedagem e
+            integração do e-mail profissional, garantindo que você já comece com
+            tudo pronto e funcionando.
+          </p>
         </div>
       </section>
 
@@ -580,7 +598,7 @@ export default function LandingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -670,6 +688,111 @@ export default function LandingPage() {
             </AccordionItem>
           </Accordion>
         </div>
+      </section> */}
+      <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Perguntas Frequentes
+            </h2>
+            <p className="text-xl text-gray-600">
+              As dúvidas que mais recebemos — respondidas de forma clara e
+              direta
+            </p>
+          </div>
+
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left">
+                Quanto tempo leva para meu site ficar pronto?
+              </AccordionTrigger>
+              <AccordionContent>
+                Em até 24h após a contratação entramos em contato para alinhar
+                tudo. O site é entregue em até <strong>7 dias úteis</strong>, já
+                com sua identidade visual e informações. Ajustes podem ser
+                solicitados antes da publicação.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left">
+                O que está incluído no plano?
+              </AccordionTrigger>
+              <AccordionContent>
+                Você recebe um site moderno que funciona em qualquer celular ou
+                computador, hospedagem, certificado de segurança (SSL), e-mail
+                profissional, suporte e todas as atualizações necessárias. O
+                domínio é registrado à parte (cerca de R$40/ano).
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left">
+                Preciso comprar o domínio separado?
+              </AccordionTrigger>
+              <AccordionContent>
+                Sim, mas é simples e barato: custa em média R$40/ano no .com.br.
+                Nós ajudamos a registrar e o domínio fica em seu nome — ou seja,
+                é 100% seu.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-left">
+                Posso atualizar o site depois?
+              </AccordionTrigger>
+              <AccordionContent>
+                Sim! Você pode pedir alterações a qualquer momento de acordo com
+                seu plano. Temos uma equipe dedicada para fazer ajustes e
+                melhorias sempre que precisar. O suporte é humano, sem robôs.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-left">
+                Como funciona o e-mail profissional?
+              </AccordionTrigger>
+              <AccordionContent>
+                Criamos endereços como <em>seunome@seudominio.com.br</em>. Eles
+                funcionam em qualquer celular ou programa como Gmail e Outlook.
+                Cada conta tem até 5GB de espaço, suficiente para milhares de
+                mensagens.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="text-left">
+                E se eu quiser cancelar?
+              </AccordionTrigger>
+              <AccordionContent>
+                O contrato inicial é de 12 meses. Depois disso, você pode
+                cancelar a qualquer momento sem burocracia. Durante o período,
+                garantimos que seu site ficará sempre no ar.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7">
+              <AccordionTrigger className="text-left">
+                O site vai aparecer no Google?
+              </AccordionTrigger>
+              <AccordionContent>
+                Sim! Todos os sites já são entregues com SEO básico, o que ajuda
+                sua empresa a ser encontrada no Google.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-8">
+              <AccordionTrigger className="text-left">
+                O site funciona em celular e tablet?
+              </AccordionTrigger>
+              <AccordionContent>
+                Com certeza. Todos os sites são <strong>responsivos</strong>, ou
+                seja, se adaptam a qualquer tela — celular, tablet ou
+                computador.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </section>
 
       {/* Final CTA Section */}
@@ -699,10 +822,13 @@ export default function LandingPage() {
             {/* Logo and Description */}
             <div className="md:col-span-2">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <Globe className="w-5 h-5 text-white" />
+                <div className="flex items-center justify-center">
+                  <img
+                    src="/HospedaShopLogoLight.svg"
+                    alt="Logo HospedaShop"
+                    className=" w-full max-h-10"
+                  />
                 </div>
-                <span className="ml-2 text-xl font-bold">HospedaShop</span>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
                 A Hospedashop cria sites profissionais completos, com hospedagem
@@ -712,7 +838,7 @@ export default function LandingPage() {
               </p>
               <div className="text-gray-400">
                 <p>📧 atendimento@hospeda.shop</p>
-                <p>📱 (11) 99999-9999</p>
+                <p>📱 (21) 98796-8794</p>
               </div>
             </div>
 
