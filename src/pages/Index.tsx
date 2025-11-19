@@ -429,7 +429,7 @@ export default function LandingPage() {
               <CardContent className="space-y-4">
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>3 opções de design</span>
+                  <span>Design Aprimorado</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -441,7 +441,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>3 atualizações mensais</span>
+                  <span>1 atualização mensal</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -505,7 +505,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                  <span>5 atualizações mensais </span>
+                  <span>2 atualizações mensais </span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
@@ -538,7 +538,7 @@ export default function LandingPage() {
           {/* Nota sobre taxa de setup */}
           <p className="text-sm text-gray-500 text-center mt-8 max-w-2xl mx-auto">
             * Todos os planos possuem uma taxa única de configuração de{" "}
-            <span className="font-semibold text-gray-700">R$200</span>. Essa
+            <span className="font-semibold text-gray-700">R$250</span>. Essa
             taxa cobre a criação inicial do site, configuração da hospedagem e
             integração do e-mail profissional, garantindo que você já comece com
             tudo pronto e funcionando.
@@ -562,7 +562,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="group hover:shadow-lg transition-all duration-300">
               <CardContent className="pt-6">
                 <div className="flex mb-4">
@@ -574,51 +574,31 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "A HospedaShop é muito boa no que faz. Tá top. Gostei demais,
-                  estou super satisfeito."
+                  "Tá super aprovado! Você é muito bom no que faz. Tá top.
+                  Gostei demais, estou super satisfeito!"
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-blue-600 rounded-full overflow-hidden">
                     <img
-                      src="https://media.licdn.com/dms/image/v2/D4D03AQHWRxfumYXywg/profile-displayphoto-shrink_800_800/B4DZX.dyGfHwAc-/0/1743730975959?e=1758153600&v=beta&t=2-jLn12VQjzaCVy5T5m8h9KEatlB5V_4Xsw24s_Ib78" // Substitua pelo caminho da imagem do avatar
+                      src="/sxenglish.jpg" // Substitua pelo caminho da imagem do avatar
                       alt="Avatar"
                       className="w-full h-full object-cover"
                     />
                   </div>{" "}
                   <div className="ml-3">
-                    <p className="font-semibold">Rafael Carloto</p>
-                    <p className="text-sm text-gray-500">CEO, SmartXEnglish</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-lg transition-all duration-300">
-              <CardContent className="pt-6">
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-5 h-5 text-yellow-400 fill-current"
-                    />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-4">
-                  "Excelente custo-benefício! Nosso restaurante agora tem um
-                  site profissional que atrai muitos clientes."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full overflow-hidden">
-                    <img
-                      src="https://img.freepik.com/fotos-gratis/sorrindo-garcom-segurando-rolo-vegetal-no-cafa_1170-610.jpg?semt=ais_hybrid&w=740&q=80" // Substitua pelo caminho da imagem do avatar
-                      alt="Avatar"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>{" "}
-                  <div className="ml-3">
-                    <p className="font-semibold">Roberto Silva</p>
-                    <p className="text-sm text-gray-500">
-                      Proprietário, Sabor & Arte
+                    <p className="font-semibold">
+                      Rafael Carloto
+                      <span className="text-sm text-gray-500 ml-2">
+                        || CEO,
+                        <a
+                          href="https://smartxenglish.com.br"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline ml-2"
+                        >
+                          SmartXEnglish
+                        </a>
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -636,21 +616,32 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "Processo super rápido e fácil. Em poucos dias tínhamos nosso
-                  site no ar com email profissional funcionando."
+                  "Boa tarde, Daniel! Gostaria de agradecer pela atualização do
+                  nosso site. Ficou ótimo. Muito obrigado pela atenção de
+                  sempre. Super recomendo!"
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-blue-600 rounded-full overflow-hidden">
                     <img
-                      src="https://all-images.ai/wp-content/uploads/2024/02/ai-face-generator.png" // Substitua pelo caminho da imagem do avatar
+                      src="/lliz.jpg" // Substitua pelo caminho da imagem do avatar
                       alt="Avatar"
                       className="w-full h-full object-cover"
                     />
                   </div>{" "}
                   <div className="ml-3">
-                    <p className="font-semibold">Ana Ferreira</p>
-                    <p className="text-sm text-gray-500">
-                      Diretora, Tech Solutions
+                    <p className="font-semibold">
+                      Dariney Braga{" "}
+                      <span className="text-sm text-gray-500 ml-2">
+                        || CEO,
+                        <a
+                          href="https://lliz.com.br"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline ml-2"
+                        >
+                          Lliz Ambiental
+                        </a>
+                      </span>
                     </p>
                   </div>
                 </div>
